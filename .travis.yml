@@ -5,7 +5,7 @@ branches:
    - master
 before_install:
   - sudo apt-get install intltool libcap-dev libjson0 libjson0-dev libsndfile1 libsndfile1-dev
-  - wget https://s3.amazonaws.com/json-c_releases/releases/json-c-0.12.tar.gz
+  - wget http://freedesktop.org/software/pulseaudio/releases/pulseaudio-4.0.tar.gz
   - tar -xzvf json-c-0.12.tar.gz
   - cd json-c-0.12
   - sed -i s/-Werror// Makefile.in && ./configure --prefix=/usr --disable-static && make -j1
