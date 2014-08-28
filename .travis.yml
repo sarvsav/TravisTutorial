@@ -13,8 +13,9 @@ before_install:
   - cd ..
   - git clone git://anongit.freedesktop.org/pulseaudio/pulseaudio
   - cd pulseaudio
-  - ls  -l
+  - ls -l
   - ./bootstrap.sh
+  - ls -l
   - make
   - sudo make install
   - sudo ldconfig
