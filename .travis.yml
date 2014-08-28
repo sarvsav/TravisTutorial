@@ -4,7 +4,7 @@ branches:
   only:
    - master
 before_install:
-  - sudo apt-get install intltool
+  - sudo apt-get install intltool libcap-dev
   - git clone git://anongit.freedesktop.org/pulseaudio/pulseaudio
   - cd pulseaudio
   - ./bootstrap.sh
