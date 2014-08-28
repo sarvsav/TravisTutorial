@@ -4,7 +4,7 @@ branches:
   only:
    - master
 before_install:
-  - sudo apt-get install intltool libcap-dev libjson0 libjson0-dev libjson-c-dev
+  - sudo apt-get install intltool libcap-dev libjson0 libjson0-dev
   - wget https://s3.amazonaws.com/json-c_releases/releases/json-c-0.12.tar.gz
   - tar -xzvf json-c-0.12.tar.gz
   - sed -i s/-Werror// Makefile.in && ./configure --prefix=/usr --disable-static && make -j1
