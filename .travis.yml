@@ -3,7 +3,14 @@ language: cpp
 branches:
   only:
    - master
-
+before_install:
+  - git clone git://anongit.freedesktop.org/pulseaudio/pulseaudio
+  - cd pulseaudio
+  - ./bootstrap.sh
+  - make
+  - sudo make install
+  - sudo ldconfig
+  - pulseaudio --version
 before_script: ls
 
 script:
