@@ -9,6 +9,8 @@ before_install:
   - tar -xzvf json-c-0.12.tar.gz
   - cd json-c-0.12
   - sed -i s/-Werror// Makefile.in && ./configure --prefix=/usr --disable-static && make -j1
+  - make install
+  - cd ..
   - git clone git://anongit.freedesktop.org/pulseaudio/pulseaudio
   - cd pulseaudio
   - ./bootstrap.sh
